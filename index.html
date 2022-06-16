@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Finity</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="max-w-screen-2xl mx-auto">
+
+    <header id="header">
+
+        <!-- desktop UI -->
+        <div class="flex justify-between items-center p-7">
+
+            <!-- desktop navs -->
+            <div class="hidden md:block space-x-7">
+                <a href="#">Demos</a>
+                <a href="#">Pages</a>
+                <a href="#">Support</a>
+            </div>
+            <!-- end of desktop navs -->
+
+            <!-- logo -->
+            <div class="logo">
+                <img src="./assets/Logo.png" alt="logo" />
+            </div>
+            <!-- end of logo -->
+
+            <!-- Submit New Job -->
+            <div class="hidden md:block">
+                <button>+ Submit New Job</button>
+            </div>
+            <!--end of Submit New Job -->
+
+            <!-- mobile button -->
+            <div class="md:hidden">
+                <span>|||</span>
+            </div>
+            <!-- end of mobile button -->
+
+        </div>
+        <!-- end of desktop UI -->
+
+
+        <!-- mobile UI -->
+
+    </header>
+
+
+    <!-- hero section -->
+    <section id="hero">
+        <div class="md:max-w-[90%] mx-auto h-[90vh] relative">
+
+            <!-- background image -->
+            <div class="absolute h-full -z-10">
+                <div class="h-full w-full relative">
+                    <div class="h-full w-full dark_overlay">
+                        <img src="./assets/bg.png" alt="bg" class="h-full w-full object-cover" />
+                    </div>
+                </div>
+            </div>
+            <!-- end of background image -->
+
+
+            <!-- header typography -->
+            <div class="lg:w-1/2 h-full flex justify-center items-center text-white">
+
+                <div class="space-y-10 px-10 md:w-[60%] lg:w-[70%] text-center lg:text-left ">
+
+                    <h1 class="font-bold text-4xl xl:text-5xl ">Join the most popular tech
+                        companies.
+                    </h1>
+                    <p class="font-medium ">We've helped over 2,500 job seekers to get into the
+                        most
+                        popular
+                        tech teams.
+                    </p>
+                    <img src="./assets/tail-down.svg" alt="down" class="mx-auto lg:mx-0" />
+                </div>
+
+            </div>
+            <!-- end of header typography -->
+
+
+            <!-- search field -->
+            <div class="absolute bottom-0 w-full hidden md:block">
+                <div class="flex bg-white w-3/4 mx-auto space-x-5">
+
+                    <div class="flex items-center p-5 pl-8 flex-1 ">
+
+                        <div>
+                            <img src="./assets/search.svg" alt="search" />
+                        </div>
+                        <div class="w-full">
+                            <input type="text" name="search" id="search" placeholder="Try “Software Developer”"
+                                class="w-full outline-none border-none p-5 rounded-sm" />
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center space-x-5 p-5 relative dashed_border">
+
+                        <div class="flex items-center space-x-5">
+                            <img src="./assets/pin.svg" alt="pin" />
+                            <p>New York, USA</p>
+                        </div>
+                        <div>
+                            <img src="./assets/down.svg" alt="down" />
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center bg-[#22B0FC] text-white p-5 lg:px-20">
+                        <button>Search Job</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end of search field -->
+
+        </div>
+    </section>
+
+    <!-- end of hero section -->
+
+
+    <!-- company and category -->
+    <section class="bg-[#E9F7FE] py-10 extend_background relative">
+        <!-- companies -->
+        <div class="md:w-2/3 lg:w-3/4 mx-auto px-5 md:px-0 py-10">
+            <div class="space-y-10 flex flex-col items-center ">
+                <!-- typography -->
+                <div>
+                    <p class="text-[#8C97AC]">Popular tech companies who are seeking talents in our website</p>
+                </div>
+
+                <!-- logo -->
+                <div class="flex items-center space-x-5 md:space-x-10 lg:space-x-20">
+                    <div class="flex items-center justify-center"><img src="./assets/logo-5.png" alt="l1" /></div>
+                    <div class="flex items-center justify-center"><img src="./assets/logo-4.png" alt="l1" /></div>
+                    <div class="flex items-center justify-center"><img src="./assets/logo-3.png" alt="l1" /></div>
+                    <div class="flex items-center justify-center"><img src="./assets/logo-2.png" alt="l1" /></div>
+                    <div class="flex items-center justify-center"><img src="./assets/logo-1.png" alt="l1" /></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of companies -->
+
+        <!-- category -->
+
+        <div class="my-20">
+            <div>
+                <!-- typography and buttons -->
+                <div class="md:w-3/4 mx-auto flex justify-between items-center px-5">
+                    <h1 class="text-4xl font-semibold">Explore <br> by category </h1>
+                    <div class="flex space-x-3">
+                        <div class="h-10 w-10 rounded-full border flex items-center justify-center border-[#22B0FC40]">
+                            <i class="fa-solid fa-chevron-left text-[#22B0FC]"></i>
+                        </div>
+                        <div
+                            class="h-10 w-10 rounded-full border flex items-center justify-center border-[#22B0FC40] bg-[#22B0FC]">
+                            <i class="fa-solid fa-chevron-right text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of typography and buttons -->
+
+                <div class="mt-16">
+                    <div class="flex space-x-5 overflow-hidden justify-center">
+
+
+                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
+                            <div class="space-y-5">
+
+                                <img src="./assets/coins.svg" alt="finance" />
+                                <div>
+                                    <p class="font-semibold">Finance</p>
+                                    <p class="text-xs">96 Jobs</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
+                            <div class="space-y-5">
+
+                                <img src="./assets/drop.svg" alt="finance" />
+                                <div>
+                                    <p class="font-semibold">Design</p>
+                                    <p class="text-xs">237 Jobs</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
+                            <div class="space-y-5">
+
+                                <img src="./assets/drop.svg" alt="finance" />
+                                <div>
+                                    <p class="font-semibold">Marketing</p>
+                                    <p class="text-xs">472 Jobs</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
+                            <div class="space-y-5">
+
+                                <img src="./assets/drop.svg" alt="finance" />
+                                <div>
+                                    <p class="font-semibold">Human Resource</p>
+                                    <p class="text-xs">132 Jobs</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
+                            <div class="space-y-5">
+
+                                <img src="./assets/drop.svg" alt="finance" />
+                                <div>
+                                    <p class="font-semibold">Developer</p>
+                                    <p class="text-xs">683 Jobs</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
+                            <div class="space-y-5">
+
+                                <img src="./assets/drop.svg" alt="finance" />
+                                <div>
+                                    <p class="font-semibold">Customer Support</p>
+                                    <p class="text-xs">1239 Jobs</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- end of category -->
+
+    </section>
+    <!-- end of company and category -->
+
+
+    <!-- job section -->
+
+
+    <section id="job" class="bg-[#F5FAFD] py-4 md:py-20 px-5">
+        <div class="md:w-3/4 mx-auto">
+            <!-- typography -->
+            <div class="flex justify-between items-center flex-col md:flex-row space-y-5 md:space-y-0">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold"><span>Find a
+                        job</span>
+                    <span class="md:block">that you
+                        love</span>
+                </h1>
+                <button class="bg-[#22B0FC] text-white h-fit p-5 font-medium w-fit">See All 2359 Jobs</button>
+            </div>
+
+
+            <!-- jobs -->
+            <div class="grid my-20 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 ">
+
+                <!-- individual job cards -->
+
+                <div class="bg-white flex flex-col p-7 rounded-sm shadow">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="flex items-center justify-center">
+                                    <img src="./assets/pin-3.svg" alt="pin" />
+                                </div>
+                                <p class="text-[#8C97AC] text-sm lg:text-base">South Haven, USA</p>
+                            </div>
+
+                            <div class="bg-[#0FBC491A] p-2 rounded-md">
+                                <p class="text-[#0FBC49] text-[12px] lg:text-[13px] font-semibold">Full-time</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-medium">Senior UX Designer at Cravers Tech.</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 mt-28">
+
+                        <div><img src="./assets/Cravers logo.svg" alt="logo"></div>
+                        <div>
+                            <h6 class="font-semibold text-lg">Cravers Tech</h6>
+                            <p class="text-[#8C97AC] text-[13px]">19 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individual job cards -->
+
+
+                <!-- individual job cards -->
+
+                <div class="bg-white flex flex-col p-7 rounded-sm shadow">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="flex items-center justify-center">
+                                    <img src="./assets/pin-3.svg" alt="pin" />
+                                </div>
+                                <p class="text-[#8C97AC] text-sm lg:text-base">Paucekchester, UK</p>
+                            </div>
+
+                            <div class="bg-[#F5A62326] p-2 rounded-md">
+                                <p class="text-[#F5A623] text-[12px] lg:text-[13px] font-semibold">Part-time</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-medium">Marketing Manager at DropDrop Inc.</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 mt-28">
+
+                        <div><img src="./assets/Dropdrop logo.svg" alt="logo"></div>
+                        <div>
+                            <h6 class="font-semibold text-lg">DropDrop Inc.</h6>
+                            <p class="text-[#8C97AC] text-[13px]">2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individual job cards -->
+
+
+                <!-- individual job cards -->
+
+                <div class="bg-white flex flex-col p-7 rounded-sm shadow">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="flex items-center justify-center">
+                                    <img src="./assets/pin-3.svg" alt="pin" />
+                                </div>
+                                <p class="text-[#8C97AC] text-sm lg:text-base">Noemieport, Norway</p>
+                            </div>
+
+                            <div class="bg-[#F5A62326] p-2 rounded-md">
+                                <p class="text-[#F5A623] text-[12px] lg:text-[13px] font-semibold">Part-time</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-medium">Junior Call Support Assistant at Help180.</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center justify-between mt-28">
+
+                        <div class="flex space-x-2 ">
+
+                            <div><img src="./assets/Help180 logo.svg" alt="logo" /></div>
+                            <div>
+                                <h6 class="font-semibold text-lg">Help180</h6>
+                                <p class="text-[#8C97AC] text-[13px]">4 days ago</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#E9F7FE] p-2 rounded-md">
+                            <p class="uppercase text-[11px] tracking-[1.1px] text-[#8C97AC] font-medium">Sponsored</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individual job cards -->
+
+
+                <!-- individual job cards -->
+
+                <div class="bg-white flex flex-col p-7 rounded-sm shadow">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="flex items-center justify-center">
+                                    <img src="./assets/pin-3.svg" alt="pin" />
+                                </div>
+                                <p class="text-[#8C97AC] text-sm lg:text-base">Mooreville, Canada</p>
+                            </div>
+
+                            <div class="bg-[#F5A62326] p-2 rounded-md">
+                                <p class="text-[#F5A623] text-[12px] lg:text-[13px] font-semibold">Part-time</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-medium">Project Manager at Shapers.</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 mt-28">
+
+                        <div><img src="./assets/ham.svg" alt="logo" /></div>
+                        <div>
+                            <h6 class="font-semibold text-lg">Shapers</h6>
+                            <p class="text-[#8C97AC] text-[13px]">1 week ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individual job cards -->
+
+
+
+                <!-- individual job cards -->
+
+                <div class="bg-white flex flex-col p-7 rounded-sm shadow">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="flex items-center justify-center">
+                                    <img src="./assets/pin-3.svg" alt="pin" />
+                                </div>
+                                <p class="text-[#8C97AC] text-sm lg:text-base">Anywhere</p>
+                            </div>
+
+                            <div class="bg-[#1042FD26] p-2 rounded-md">
+                                <p class="text-[#1042FD] text-[12px] lg:text-[13px] font-semibold">Remote</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-medium">Senior Software Engineer at Expracto.</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 mt-28">
+
+                        <div><img src="./assets/dots.svg" alt="logo" /></div>
+                        <div>
+                            <h6 class="font-semibold text-lg">Expracto</h6>
+                            <p class="text-[#8C97AC] text-[13px]">1 week ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individual job cards -->
+
+
+                <!-- individual job cards -->
+
+                <div class="bg-white flex flex-col p-7 rounded-sm shadow">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="flex items-center justify-center">
+                                    <img src="./assets/pin-3.svg" alt="pin" />
+                                </div>
+                                <p class="text-[#8C97AC] text-sm lg:text-base">Vonstad, Spain</p>
+                            </div>
+
+                            <div class="bg-[#0FBC491A] p-2 rounded-md">
+                                <p class="text-[#0FBC49] text-[12px] lg:text-[13px] font-semibold">Full-time</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-medium">Marketing Director at Cravers Tech.</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 mt-28">
+
+                        <div><img src="./assets/Cravers logo.svg" alt="logo" /></div>
+                        <div>
+                            <h6 class="font-semibold text-lg">Cravers Tech</h6>
+                            <p class="text-[#8C97AC] text-[13px]">2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- individual job cards -->
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <!-- jobs -->
+        </div>
+    </section>
+
+    <!-- end of job section -->
+
+
+    <!-- subscribe -->
+
+
+    <section id="subscribe" class="bg-white py-20 md:py-32">
+
+
+        <div
+            class="md:w-3/4 flex flex-col md:flex-row px-5 md:items-center mx-auto md:space-x-10 lg:space-x-20 space-y-10 md:space-y-0">
+
+            <!-- image -->
+            <div class="relative md:w-[50%]">
+
+                <div
+                    class="relative z-10 w-1/2 md:w-full ml-10 md:ml-0 before:absolute before:w-[103%] before:h-12 xl:before:h-20 before:bg-white before:-bottom-5 xl:before:-bottom-10 before:-skew-y-6">
+
+                    <img src="./assets/man.png" class="h-full w-full" alt="man" />
+
+                    <div class="absolute -top-10 -left-10 -z-10">
+                        <img src="./assets/bg-dots.png" alt="dots" />
+                    </div>
+
+
+                </div>
+
+                <div class="bg-white absolute_job_card z-10 w-fit hidden lg:block
+                ">
+                    <div
+                        class="relative xl:before:absolute before:w-[103%] before:h-12 before:bg-white before:-bottom-7 xl:before:-bottom-8 before:left-0 before:-skew-y-6 p-7 pr-10">
+
+                        <div class="space-y-7">
+
+                            <div class="border-b-4 border-dashed pb-5">
+                                <h1 class="font-semibold text-xl">New Job Alert! 🎉</h1>
+                                <p class="text-[#8C97AC] text-xs">20 mins ago</p>
+                            </div>
+
+                            <div class="flex space-x-3">
+                                <div><img src="./assets/Dropdrop logo.svg" class="h-full" alt="logo"></div>
+                                <div>
+                                    <h2 class="font-medium">DropDrop is hiring</h2>
+                                    <h1 class="font-bold">Marketing Manager!</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute_mail_logo">
+                            <img src="./assets/mail.svg" class="w-10" alt="mail" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- image -->
+
+            <!-- typography -->
+            <div class="md:w-[50%]">
+                <div class="p-5">
+                    <p class="text-[#F77321]">Join over 15,000+ tech people</p>
+                    <h1 class="text-2xl lg:text-4xl font-medium leading-tight py-7">Get instant alert on your inbox</h1>
+                    <p class="text-[#7C8087]">We receive over 50 new job submission at our website.
+                        Subscribe to our
+                        newsletter and get instant job alert on your inbox to apply. </p>
+
+                    <div class="mt-16 flex justify-between items-center">
+                        <div class="flex space-x-3">
+                            <img src="./assets/mail-sm.svg" alt="mail" />
+                            <input type="text" name="email" id="email" placeholder="Enter your email"
+                                class="bg-transparent border-none outline-none" />
+                        </div>
+                        <div class="bg-[#22B0FC] p-5 text-white cursor-pointer hover:bg-[#22b0fcc9]">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- typography -->
+
+        </div>
+
+    </section>
+
+
+    <!-- end of subscribe -->
+
+
+    <section id="news" class="bg-[#E9F7FE] py-10 md:py-20">
+
+        <div class="md:w-[90%] xl:w-3/4 mx-auto px-5">
+
+            <div class="border-b-2 pb-10 md:pb-20">
+                <div>
+                    <h1 class="text-3xl xl:text-5xl font-medium">Latest news <span class="md:block"> about job
+                            trends</span></h1>
+                </div>
+
+                <div class="my-0 flex flex-col md:flex-row md:space-x-7">
+
+                    <div class="mt-16">
+                        <!-- item 1 -->
+                        <div class="bg-white flex items-center space-x-4 lg:space-x-8 p-5 my-5">
+
+                            <div><img src="./assets/news_img_1.png" alt="img"></div>
+                            <div class="space-y-3">
+                                <h1 class="text-xs lg:text-lg font-medium">Why freelancers are more interested in
+                                    Full-time jobs?
+                                </h1>
+                                <div class="flex items-center space-x-5 lg:space-x-10 ">
+                                    <div class="flex items-center space-x-1">
+
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">2 days ago</p>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">6 min read</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of item 1 -->
+
+                        <!-- item 2 -->
+                        <div class="bg-white flex items-center space-x-4 lg:space-x-8 p-5 my-5">
+
+                            <div><img src="./assets/news_img_2.png" alt="img"></div>
+                            <div class="space-y-3">
+                                <h1 class="text-xs lg:text-lg font-medium">10 resume writing tips to land you next job.
+                                </h1>
+                                <div class="flex items-center space-x-5 lg:space-x-10 ">
+                                    <div class="flex items-center space-x-1">
+
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">2 days ago</p>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">2 days ago</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of item 2 -->
+                    </div>
+
+                    <div>
+
+                        <!-- item 3 -->
+                        <div class="bg-white flex items-center space-x-4 lg:space-x-8 p-5 my-5">
+
+                            <div><img src="./assets/news_img_3.png" alt="img"></div>
+                            <div class="space-y-3">
+                                <h1 class="text-xs lg:text-lg font-medium">Engineering job is becoming more interesting.
+                                </h1>
+                                <div class="flex items-center space-x-5 lg:space-x-10 ">
+                                    <div class="flex items-center space-x-1">
+
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">3 days ago</p>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">6 min read</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of item 3 -->
+
+
+                        <!-- item 4 -->
+                        <div class="bg-white flex items-center space-x-4 lg:space-x-8 p-5 my-5">
+
+                            <div><img src="./assets/news_img_4.png" alt="img"></div>
+                            <div class="space-y-3">
+                                <h1 class="text-xs lg:text-lg font-medium">How to manage your time efficiently to do
+                                    more.</h1>
+                                <div class="flex items-center space-x-5 lg:space-x-10 ">
+                                    <div class="flex items-center space-x-1 ">
+
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">2 days ago</p>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div><img src="./assets/time-3.svg" alt="time"></div>
+                                        <p class="text-[10px] lg:text-sm text-[#8C97AC]">3 days ago</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of item 4 -->
+                        <div class="p-5 mx-auto w-fit">
+                            <p><a href="#" class="text-[#8C97AC] font-medium">See all blog
+                                    posts</a></p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <div class="py-10 md:py-20 grid gap-y-10 md:grid-cols-2 xl:grid-cols-4 gap-x-10">
+
+                <!-- footer links -->
+
+                <!-- first section -->
+                <div class="space-y-3  md:space-y-5">
+                    <a href="#header">
+                        <img src="./assets/Logo.png" alt="finity" />
+                    </a>
+                    <p class="text-[#7C8087]">Finity has a collection of latest 2,500 jobs to join next companies.</p>
+                </div>
+
+
+                <!-- second section -->
+                <div class="space-y-3  md:space-y-5">
+                    <h1 class="font-semibold text-xl">Community</h1>
+                    <div class="space-y-2 md:space-y-3">
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                For Talents
+                            </a></p>
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                For Companies
+                            </a></p>
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                Facebook Group
+                            </a></p>
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                FAQ
+                            </a></p>
+                    </div>
+                </div>
+
+
+                <!-- third section -->
+                <div class="space-y-3  md:space-y-5">
+                    <h1 class="font-semibold text-xl">About us</h1>
+
+                    <div class="space-y-2 md:space-y-3">
+                        <p><a href="#" class="text-[#7C8087] hover:underline">Meet the Team
+                            </a></p>
+                        <p><a href="#" class="text-[#7C8087] hover:underline"> Our Story
+                            </a></p>
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                Career
+                            </a></p>
+                    </div>
+                </div>
+
+                <!-- fourth section -->
+                <div class="space-y-3 md:space-y-5">
+                    <h1 class="font-semibold text-xl">Useful</h1>
+                    <div class="space-y-2 md:space-y-3">
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                Free Resume Builder
+
+                            </a></p>
+
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                Free Graphics
+                            </a></p>
+
+                        <p><a href="#" class="text-[#7C8087] hover:underline">
+                                Career Blog
+
+                            </a></p>
+                    </div>
+                </div>
+
+
+
+                <!-- end of footer links -->
+
+            </div>
+
+            <div class="text-[#7C8087] flex justify-between flex-col md:flex-row space-y-3 md:space-y-0">
+                <p>© Finity 2019, All Rights Reserved</p>
+                <p>Design By <span class="text-[#22B0FC]">Grayic</span></p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
