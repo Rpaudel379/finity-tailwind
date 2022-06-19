@@ -6,50 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome | Finity</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- Link Swiper's CSS -->
+
+
+
 </head>
 
 <body class="max-w-screen-2xl mx-auto">
 
-    <header id="header">
+    <header id="header" class="relative">
 
         <!-- desktop UI -->
-        <div class="flex justify-between items-center p-7">
+        <div class="fixed top-0 w-full z-30">
+            <div class="flex justify-between items-center p-7 bg-white">
 
-            <!-- desktop navs -->
-            <div class="hidden md:block space-x-7">
-                <a href="#">Demos</a>
-                <a href="#">Pages</a>
-                <a href="#">Support</a>
+                <!-- desktop navs -->
+                <div class="hidden md:block space-x-7">
+                    <a href="#">Demos</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Support</a>
+                </div>
+                <!-- end of desktop navs -->
+
+                <!-- logo -->
+                <div class="logo ">
+                    <img src="./assets/Logo.png" alt="logo" />
+                </div>
+                <!-- end of logo -->
+
+                <!-- Submit New Job -->
+                <div class="hidden md:block">
+                    <button>+ Submit New Job</button>
+                </div>
+                <!--end of Submit New Job -->
+
+                <!-- mobile button -->
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars cursor-pointer mobile-button"></i>
+                </div>
+                <!-- end of mobile button -->
+
             </div>
-            <!-- end of desktop navs -->
-
-            <!-- logo -->
-            <div class="logo">
-                <img src="./assets/Logo.png" alt="logo" />
-            </div>
-            <!-- end of logo -->
-
-            <!-- Submit New Job -->
-            <div class="hidden md:block">
-                <button>+ Submit New Job</button>
-            </div>
-            <!--end of Submit New Job -->
-
-            <!-- mobile button -->
-            <div class="md:hidden">
-                <span>|||</span>
-            </div>
-            <!-- end of mobile button -->
-
         </div>
         <!-- end of desktop UI -->
 
 
+
+
         <!-- mobile UI -->
+
+
+        <div
+            class="w-[80%] fixed z-50 bg-white h-screen flex justify-center items-center invisible mobile-container transition-all ease-in-out duration-150">
+
+            <div class="flex flex-col space-y-5 text-lg font-medium capitalize tracking-wider">
+                <a href="#nav" class="hover-link">home</a>
+                <a href="#about" class="hover-link">about</a>
+                <a href="#gallery" class="hover-link">gallery</a>
+                <a href="#projects" class="hover-link">projects</a>
+                <a href="#contact" class="hover-link">contact</a>
+            </div>
+        </div>
+
 
     </header>
 
@@ -129,7 +156,7 @@
 
 
     <!-- company and category -->
-    <section class="bg-[#E9F7FE] py-10 extend_background relative">
+    <section class="bg-[#E9F7FE] py-10 md:extend_background relative">
         <!-- companies -->
         <div class="md:w-2/3 lg:w-3/4 mx-auto px-5 md:px-0 py-10">
             <div class="space-y-10 flex flex-col items-center ">
@@ -159,96 +186,124 @@
                 <div class="md:w-3/4 mx-auto flex justify-between items-center px-5">
                     <h1 class="text-4xl font-semibold">Explore <br> by category </h1>
                     <div class="flex space-x-3">
-                        <div class="h-10 w-10 rounded-full border flex items-center justify-center border-[#22B0FC40]">
-                            <i class="fa-solid fa-chevron-left text-[#22B0FC]"></i>
+                        <div
+                            class="h-10 w-10 rounded-full border flex items-center justify-center border-[#22B0FC40] swiper-prev">
+                            <i class="fa-solid fa-chevron-left text-[#22B0FC]  !cursor-pointer"></i>
                         </div>
                         <div
-                            class="h-10 w-10 rounded-full border flex items-center justify-center border-[#22B0FC40] bg-[#22B0FC]">
-                            <i class="fa-solid fa-chevron-right text-white"></i>
+                            class="h-10 w-10 rounded-full border flex items-center justify-center border-[#22B0FC40] bg-[#22B0FC] swiper-next ">
+                            <i class="fa-solid fa-chevron-right text-white !cursor-pointer"></i>
                         </div>
                     </div>
                 </div>
                 <!-- end of typography and buttons -->
 
-                <div class="mt-16">
-                    <div class="flex space-x-5 overflow-hidden justify-center">
+                <div class="mt-16 swiper mySwiper">
 
+                    <div class="swiper-wrapper">
 
-                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
-                            <div class="space-y-5">
+                        <div class="swiper-slide">
 
-                                <img src="./assets/coins.svg" alt="finance" />
-                                <div>
-                                    <p class="font-semibold">Finance</p>
-                                    <p class="text-xs">96 Jobs</p>
+                            <div class="bg-white flex items-center pl-5 pb-5 pt-10 pr-16 ">
+                                <div class="space-y-5">
+
+                                    <img src="./assets/coins.svg" alt="finance" />
+                                    <div>
+                                        <p class="font-semibold">Finance</p>
+                                        <p class="text-xs">96 Jobs</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
-                            <div class="space-y-5">
-
-                                <img src="./assets/drop.svg" alt="finance" />
-                                <div>
-                                    <p class="font-semibold">Design</p>
-                                    <p class="text-xs">237 Jobs</p>
-                                </div>
-
-                            </div>
-                        </div>
+                        <div class="swiper-slide">
 
 
-                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
-                            <div class="space-y-5">
+                            <div class="bg-white flex items-center  pl-5 pb-5 pt-10 pr-16">
+                                <div class="space-y-5">
 
-                                <img src="./assets/drop.svg" alt="finance" />
-                                <div>
-                                    <p class="font-semibold">Marketing</p>
-                                    <p class="text-xs">472 Jobs</p>
-                                </div>
+                                    <img src="./assets/drop.svg" alt="finance" />
+                                    <div>
+                                        <p class="font-semibold">Design</p>
+                                        <p class="text-xs">237 Jobs</p>
+                                    </div>
 
-                            </div>
-                        </div>
-
-
-                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
-                            <div class="space-y-5">
-
-                                <img src="./assets/drop.svg" alt="finance" />
-                                <div>
-                                    <p class="font-semibold">Human Resource</p>
-                                    <p class="text-xs">132 Jobs</p>
                                 </div>
                             </div>
                         </div>
 
 
+                        <div class="swiper-slide">
 
 
-                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
-                            <div class="space-y-5">
+                            <div class="bg-white flex items-center  pl-5 pb-5 pt-10 pr-16 ">
+                                <div class="space-y-5">
 
-                                <img src="./assets/drop.svg" alt="finance" />
-                                <div>
-                                    <p class="font-semibold">Developer</p>
-                                    <p class="text-xs">683 Jobs</p>
+                                    <img src="./assets/drop.svg" alt="finance" />
+                                    <div>
+                                        <p class="font-semibold">Marketing</p>
+                                        <p class="text-xs">472 Jobs</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white flex items-center basis-full pl-5 pb-5 pt-10 pr-16">
-                            <div class="space-y-5">
 
-                                <img src="./assets/drop.svg" alt="finance" />
-                                <div>
-                                    <p class="font-semibold">Customer Support</p>
-                                    <p class="text-xs">1239 Jobs</p>
+                        <div class="swiper-slide">
+
+
+                            <div class="bg-white flex items-center  pl-5 pb-5 pt-10 pr-6">
+                                <div class="space-y-5">
+
+                                    <img src="./assets/drop.svg" alt="finance" />
+                                    <div>
+                                        <p class="font-semibold">Human Resource</p>
+                                        <p class="text-xs">132 Jobs</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <div class="swiper-slide">
+
+
+                            <div class="bg-white flex items-center  pl-5 pb-5 pt-10 pr-16">
+                                <div class="space-y-5">
+
+                                    <img src="./assets/drop.svg" alt="finance" />
+                                    <div>
+                                        <p class="font-semibold">Developer</p>
+                                        <p class="text-xs">683 Jobs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+
+                            <div class="bg-white flex items-center  pl-5 pb-5 pt-10 pr-16">
+                                <div class="space-y-5">
+
+                                    <img src="./assets/drop.svg" alt="finance" />
+                                    <div>
+                                        <p class="font-semibold">Customer Support</p>
+                                        <p class="text-xs">1239 Jobs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
 
                     </div>
+
+
+
                 </div>
 
             </div>
@@ -811,6 +866,10 @@
     </section>
 
 
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
 
 </body>
 
